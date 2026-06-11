@@ -1,0 +1,59 @@
+# config.yml
+
+bot_token: "PASTE_YOUR_DISCORD_BOT_TOKEN"
+prefix: "/"
+
+admin_ids:
+  - YOUR_DISCORD_USER_ID
+
+# VM Settings
+vm_storage_path: "/var/lib/libvirt/rajveer-vms"
+default_os: "Ubuntu 24.04 LTS"
+vm_lifetime_days: 30
+max_vps_per_user: 5
+
+# Resource Limits
+max_ram: 32768      # 32GB
+max_cpu: 8          # 8 Cores
+
+# SSH Settings
+ssh_port_range:
+  - 2200
+  - 2300
+
+admin_ssh_key: ""
+
+# Economy
+invite_reward: 10
+
+# VPS Plans
+shop_items:
+  - name: "Starter VPS"
+    ram: 1024
+    cpu: 1
+    disk: 20
+    price: 20
+
+  - name: "Pro VPS"
+    ram: 2048
+    cpu: 2
+    disk: 50
+    price: 50
+
+  - name: "Enterprise VPS"
+    ram: 4096
+    cpu: 4
+    disk: 100
+    price: 100
+
+  - name: "Ultimate VPS"
+    ram: 8192
+    cpu: 6
+    disk: 200
+    price: 200
+
+  - name: "King VPS"
+    ram: 16384
+    cpu: 8
+    disk: 400
+    price: 500
